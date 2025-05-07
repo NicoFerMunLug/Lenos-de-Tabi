@@ -8,7 +8,7 @@ type Image = {
 };
 
 const images: Image[] = Array.from({ length: 30 }, (_, i) => ({
-  url: `../img/galeria/foto${i + 1}.JPG`,
+  url: `../img/galeria/foto${i + 1}.webp`,
   alt: `Foto ${i + 1}`
 }));
 
