@@ -1,2 +1,2 @@
-# Le-os-de-tabi
+# Lenos-de-tabi
 Proyecto web Leños de Tabí
