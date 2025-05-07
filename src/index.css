@@ -19,13 +19,6 @@ a, button {
 }
 
 @layer base {
-  html {
-    @apply scroll-smooth;
-  }
-  
-  body {
-    @apply overflow-x-hidden bg-cream-50 text-coffee-900;
-  }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-bold;
