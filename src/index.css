@@ -25,7 +25,7 @@ a, button {
   }
   
   body {
-    @apply overflow-x-hidden bg-cream-50 text-coffee-900;
+    @apply overflow-x-hidden bg-gray-50 text-coffee-900; /* Cambiado a bg-gray-50 */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -63,7 +63,7 @@ a, button {
   }
 
   .btn-primary {
-    @apply bg-coffee-600 text-cream-50 hover:bg-coffee-700;
+    @apply bg-coffee-600 text-gray-50 hover:bg-coffee-700; /* Cambiado a bg-gray-50 */
   }
 
   .btn-outline {
