@@ -7,8 +7,8 @@ type Image = {
   alt: string;
 };
 
-const images: Image[] = Array.from({ length: 30 }, (_, i) => ({
-  url: `../img/galeria/foto${i + 1}.JPG`,
+const images: Image[] = Array.from({ length: 32 }, (_, i) => ({
+  url: `/img/galeria/foto${i + 1}.webp`,
   alt: `Foto ${i + 1}`
 }));
 
@@ -32,34 +32,35 @@ const Gallery: React.FC = () => {
 
   useEffect(() => {
     if (loadedImages === images.length) {
+      // Agrega un pequeño retraso para una mejor experiencia visual
       setTimeout(() => setIsLoading(false), 500);
     }
   }, [loadedImages]);
 
   return (
     <section className="py-24 bg-cream-100 relative min-h-screen">
-      {isLoading && (
-        <div className="loader">
-          <div className="container">
-            <div className="coffee-header">
-              <div className="coffee-header__buttons"></div>
-              <div className="coffee-header__display"></div>
-              <div className="coffee-header__details"></div>
-            </div>
-            <div className="coffee-medium">
-              <div className="coffe-medium__exit"></div>
-              <div className="coffee-medium__arm"></div>
-              <div className="coffee-medium__liquid"></div>
-              <div className="smoke one"></div>
-              <div className="smoke two"></div>
-              <div className="smoke three"></div>
-              <div className="smoke four"></div>
-              <div className="coffee-medium__cup"></div>
-            </div>
+      {/* Loader */}
+      <div className={`loader ${isLoading ? '' : 'fade-out'}`}>
+        <div className="container">
+          <div className="coffee-header">
+            <div className="coffee-header__buttons"></div>
+            <div className="coffee-header__display"></div>
+            <div className="coffee-header__details"></div>
+          </div>
+          <div className="coffee-medium">
+            <div className="coffe-medium__exit"></div>
+            <div className="coffee-medium__arm"></div>
+            <div className="coffee-medium__liquid"></div>
+            <div className="smoke one"></div>
+            <div className="smoke two"></div>
+            <div className="smoke three"></div>
+            <div className="smoke four"></div>
+            <div className="coffee-medium__cup"></div>
           </div>
         </div>
-      )}
+      </div>
 
+      {/* Galería */}
       <div className={`${isLoading ? 'hidden' : 'block'} container mx-auto px-4`}>
         <SectionHeader
           id="galeria"
