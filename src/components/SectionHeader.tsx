@@ -11,7 +11,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ id, title, subtitle, chil
   return (
     <div id={id} className="mb-12"> {/* Agregado el id aquí */}
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-coffee-900">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900">
           {title}
         </h2>
         {subtitle && (

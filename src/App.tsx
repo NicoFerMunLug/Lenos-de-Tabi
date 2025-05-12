@@ -11,7 +11,7 @@ import Gallery from './sections/Gallery';
 
 function App() {
   return (
-    <div className="font-sans text-coffee-900 bg-cream-50">
+    <div className="font-sans text-gray-900 bg-cream-50">
       <Navbar />
       <main>
         <HeroSection />

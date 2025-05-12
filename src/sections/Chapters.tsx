@@ -48,7 +48,7 @@ const Chapters = () => {
                 videoid={chapter.videoId}
                 class="w-full h-72"
               ></lite-youtube>
-              <h3 className="absolute bottom-4 right-4 text-xl font-serif font-bold text-coffee-900 bg-cream-50 bg-opacity-80 px-4 py-2 rounded-lg shadow-md">
+              <h3 className="absolute bottom-4 right-4 text-xl font-serif font-bold text-gray-900 bg-cream-50 bg-opacity-80 px-4 py-2 rounded-lg shadow-md">
                 {chapter.title}
               </h3>
             </div>
