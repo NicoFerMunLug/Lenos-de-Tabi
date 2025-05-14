@@ -5,23 +5,27 @@ import HeroSection from './sections/HeroSection';
 import TechnicalSheet from './sections/TechnicalSheet';
 import ProductionBible from './sections/ProductionBible';
 import Characters from './sections/Characters';
+import Scripts from './sections/Scripts'; // Nueva sección
+import ProductionTeam from './sections/ProductionTeam'; // Nueva sección
 import DramaticArcs from './sections/DramaticArcs';
 import Chapters from './sections/Chapters';
 import Gallery from './sections/Gallery';
 
 function App() {
   return (
-        <div className="font-sans text-white bg-cream-50">
+    <div className="font-sans text-white bg-cream-50">
       <Navbar />
 
       <main>
-          <HeroSection />
-          <TechnicalSheet />
-          <ProductionBible />
-          <Characters />
-          <DramaticArcs />
-          <Chapters />
-          <Gallery />
+        <HeroSection />
+        <TechnicalSheet />
+        <ProductionBible />
+        <Characters />
+        <Scripts />
+        <ProductionTeam />
+        <DramaticArcs />
+        <Chapters />
+        <Gallery />
       </main>
 
       <Footer />

@@ -28,8 +28,8 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{
-          backgroundImage: "url('/img/bg_primera_vista.jpg')",
-          filter: 'blur(3px)', // Aplica desenfoque al fondo
+          backgroundImage: "url('../img/bg_primera_vista.jpg')",
+          filter: 'blur(3px)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -40,11 +40,15 @@ const HeroSection = () => {
 
       {/* Contenido */}
       <div className="relative h-full flex flex-col items-center justify-center text-center text-cream-50 px-4">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-4">
-          El Sabor Auténtico <br />de Colombia
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-cream-100">
-          Descubre la rica tradición cafetera colombiana en cada taza, desde la semilla hasta la mesa.
+        {/* Imagen del título */}
+        <img
+          src="../../public/img/TITULO.png"
+          alt="El auténtico sabor de Colombia"
+          style={{ width: '80rem', height: 'auto', paddingBottom: '30px',marginBottom: '-150px', marginTop: '-200px'}}
+        />
+        {/* Texto adicional */}
+        <p className="text-2xl md:text-3xl max-w-2xl mx-auto mt--40 mb-8 text-white font-semibold">
+          El verdadero aroma del café.
         </p>
 
         <button

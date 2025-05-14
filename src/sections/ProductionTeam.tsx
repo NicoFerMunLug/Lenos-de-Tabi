@@ -6,37 +6,37 @@ import 'swiper/css/autoplay';
 import { EffectCoverflow, Autoplay } from 'swiper/modules';
 import SectionHeader from '../components/SectionHeader';
 
-const characters = [
+const team = [
   {
-    name: 'David Alberto Giraldo',
-    role: 'Interpretado por: Santiago Montoya Bermúdez',
-    image: '../../public/img/David_giraldo.jpg'
+    name: 'Director',
+    role: 'Juan Pérez',
+    image: '../../public/img/director.jpg',
   },
   {
-    name: 'David Alberto Giraldo (Adulto)',
-    role: 'Interpretado por: Santiago Montoya Bermúdez',
-    image: '../../public/img/reinel.jpg'
+    name: 'Productor',
+    role: 'María Gómez',
+    image: '../../public/img/productor.jpg',
   },
   {
-    name: 'Papá de David',
-    role: 'Interpretado por: Fernando Lopera',
-    image: '../../public/img/Papa_david.jpg'
+    name: 'Director de Fotografía',
+    role: 'Carlos López',
+    image: '../../public/img/fotografia.jpg',
   },
   {
-    name: 'Mamá de David',
-    role: 'Interpretado por: Gloria Bernal',
-    image: '../../public/img/Mama_david.jpg'
+    name: 'Diseñador de Producción',
+    role: 'Ana Martínez',
+    image: '../../public/img/disenador.jpg',
   },
 ];
 
-const Characters = () => {
+const ProductionTeam = () => {
   return (
-    <section className="h-screen bg-[#6e322b] py-10"> {/* Cambiado el color de fondo */}
+    <section className="h-screen bg-[#6e322b] py-10">
       <div className="container mx-auto px-4">
         <SectionHeader
-          id="personajes"
-          title={<h1 className="text-white">Personajes</h1>}
-          subtitle={<p className="text-white">Conoce a los protagonistas de nuestra historia</p>}
+          id="produccion"
+          title={<h1 className="text-white">Equipo de Producción</h1>}
+          subtitle={<p className="text-white">Conoce al equipo detrás de cámaras</p>}
         />
 
         <Swiper
@@ -59,19 +59,19 @@ const Characters = () => {
           loop={true}
           className="mt-12"
         >
-          {characters.map((character, index) => (
+          {team.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="relative bg-coffee-800 rounded-lg overflow-hidden shadow-xl w-66 mx-auto">
                 <div className="h-72 overflow-hidden">
                   <img
-                    src={character.image}
-                    alt={character.name}
+                    src={member.image}
+                    alt={member.name}
                     className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-5 text-cream-50 text-center">
-                  <h3 className="text-xl font-serif font-bold">{character.name}</h3>
-                  <p className="text-cream-100 mt-2 font-bold italic">{character.role}</p>
+                  <h3 className="text-xl font-serif font-bold">{member.name}</h3>
+                  <p className="text-cream-100 mt-2 font-bold italic">{member.role}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -82,4 +82,4 @@ const Characters = () => {
   );
 };
 
-export default Characters;
+export default ProductionTeam;

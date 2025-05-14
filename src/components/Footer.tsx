@@ -2,16 +2,21 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-coffee-900 text-cream-100 py-16">
+    <footer className="bg-[#9f533b] text-cream-100 py-16"> {/* Cambié el fondo al color #9f533b */}
       <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-16"> {/* Tres columnas iguales */}
         
         {/* Columna 1: Información */}
-        <div>
-          <h3 className="text-2xl font-serif font-bold text-cream-50 mb-6">Leños de Tabí</h3>
-          <p className="mb-4">
+        <div className="flex flex-col items-center md:items-start">
+          {/* Reemplazo del texto por la imagen */}
+          <img
+            src="../../public/img/TITULO.png"
+            alt="Leños de Tabí"
+            style={{ width: '15rem', height: 'auto' }}
+          />
+          <p className="mb-4 text-center md:text-left">
             Descubre la auténtica tradición cafetera colombiana, desde la semilla hasta la taza. Nuestro compromiso es preservar la cultura cafetera y compartirla con el mundo.
           </p>
-          <p>
+          <p className="text-center md:text-left">
             Este proyecto es un homenaje a los caficultores colombianos, quienes con dedicación y esfuerzo hacen posible que disfrutemos del mejor café.
           </p>
         </div>
@@ -20,7 +25,17 @@ const Footer = () => {
         <div className="text-center"> {/* Centrado */}
           <h4 className="text-lg font-serif font-bold text-cream-50 mb-6">Enlaces Rápidos</h4>
           <ul className="space-y-3">
-            {['Inicio', 'Ficha técnica', 'Biblia', 'Personajes', 'Arcos', 'Capítulos', 'Galeria'].map((item) => (
+            {[
+              'Inicio',
+              'Ficha técnica',
+              'Biblia',
+              'Personajes',
+              'Guiones',
+              'Equipo de Producción',
+              'Arcos',
+              'Capítulos',
+              'Galeria',
+            ].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} // Ajuste para que coincida con los IDs
