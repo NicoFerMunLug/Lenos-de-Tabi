@@ -64,8 +64,7 @@ const Gallery: React.FC = () => {
       <div className={`${isLoading ? 'hidden' : 'block'} container mx-auto px-4`}>
         <SectionHeader
           id="galeria"
-          title="Galería"
-          subtitle="Momentos capturados durante la producción"
+          title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#6e322b' }}>Galería</h2>}
         />
         <div className="mt-12">
           <div className="grid grid-cols-8 grid-rows-4 gap-4">

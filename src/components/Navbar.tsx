@@ -18,9 +18,11 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur ${
-        isScrolled ? 'bg-coffee-900/80 shadow-lg py-2' : 'bg-transparent py-4'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur`}
+      style={{
+        backgroundColor: isScrolled ? 'rgba(110, 50, 43, 0.8)' : 'rgba(110, 50, 43, 0.5)', // Fondo con transparencia
+        boxShadow: isScrolled ? '0 4px 6px rgba(0, 0, 0, 0.1)' : 'none', // Sombra al hacer scroll
+      }}
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
@@ -35,14 +37,15 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex flex-wrap space-x-4">
-            <ul className="flex flex-wrap space-x-4">
+            <ul className="flex flex-wrap space-x-4 font-typewriter">
               {[
                 'Inicio',
                 'Ficha técnica',
                 'Biblia',
                 'Personajes',
                 'Guiones',
-                'Equipo de Producción',
+                'Producción',
+                'Trailer',
                 'Arcos',
                 'Capítulos',
                 'Galeria',
@@ -82,13 +85,14 @@ const Navbar = () => {
                 'Personajes',
                 'Guiones',
                 'Producción',
+                'Trailer',
                 'Arcos',
                 'Capítulos',
                 'Galeria',
               ].map((item) => (
                 <li key={item}>
                   <a
-                    href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} // Ajusta el href para que coincida con los id
+                    href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-coffee-200 hover:text-coffee-300 transition-colors duration-300 block py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >

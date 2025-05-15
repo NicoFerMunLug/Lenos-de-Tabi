@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#9f533b] text-cream-100 py-16"> {/* Cambié el fondo al color #9f533b */}
+    <footer className="bg-[#6e322b] text-cream-100 py-16">
       <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-16"> {/* Tres columnas iguales */}
         
         {/* Columna 1: Información */}
@@ -22,23 +22,24 @@ const Footer = () => {
         </div>
 
         {/* Columna 2: Enlaces rápidos */}
-        <div className="text-center"> {/* Centrado */}
-          <h4 className="text-lg font-serif font-bold text-cream-50 mb-6">Enlaces Rápidos</h4>
-          <ul className="space-y-3">
+        <div className="text-center">
+          <h4 className="text-lg font-serif font-bold text-cream-50 mb-6 font-typewriter font-bold">Enlaces Rápidos</h4>
+          <ul className="space-y-3 font-typewriter">
             {[
               'Inicio',
               'Ficha técnica',
               'Biblia',
               'Personajes',
               'Guiones',
-              'Equipo de Producción',
+              'Producción',
+              'Trailer',
               'Arcos',
               'Capítulos',
               'Galeria',
             ].map((item) => (
               <li key={item}>
                 <a
-                  href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} // Ajuste para que coincida con los IDs
+                  href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                   className="hover:text-coffee-300 transition-colors"
                 >
                   {item}
@@ -50,8 +51,8 @@ const Footer = () => {
 
         {/* Columna 3: Créditos */}
         <div className="text-center"> {/* Centrado */}
-          <h4 className="text-lg font-serif font-bold text-cream-50 mb-6">Créditos</h4>
-          <ul className="space-y-3">
+          <h4 className="text-lg font-serif font-bold text-cream-50 mb-6 font-typewriter font-bold">Créditos</h4>
+          <ul className="space-y-3 font-typewriter">
             {['Juan Pérez', 'María Gómez', 'Carlos López', 'Ana Martínez', 'Luis Torres'].map((name) => (
               <li key={name} className="text-cream-100">
                 {name}

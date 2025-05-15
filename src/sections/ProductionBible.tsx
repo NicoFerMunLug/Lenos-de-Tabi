@@ -6,9 +6,8 @@ const ProductionBible = () => {
     <section className="py-24 bg-cream-100">
       <div className="container mx-auto px-4">
         <SectionHeader
-          id="personajes"
-          title={<h1 className="text-5xl md:text-4xl font-serif font-bold text-cream-50">Biblia</h1>}
-          subtitle={<p className="text-black">Guía completa del proyecto</p>}
+          id="biblia"
+          title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#6e322b' }}>Biblia</h2>}
         />
         
         <div className="mt-12">

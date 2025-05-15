@@ -8,35 +8,59 @@ import SectionHeader from '../components/SectionHeader';
 
 const team = [
   {
-    name: 'Director',
-    role: 'Juan Pérez',
-    image: '../../public/img/director.jpg',
+    name: 'Juan Pablo Delgado',
+    role: 'Director y Editor',
+    image: '../../public/img/produccion/JUANPABLO.jpg'
   },
   {
-    name: 'Productor',
-    role: 'María Gómez',
-    image: '../../public/img/productor.jpg',
+    name: 'Santiago Mejía',
+    role: 'Guionista, Director fotográfico y Editor',
+    image: '../../public/img/produccion/SANTIAGO_MEJIA.jpg'
   },
   {
-    name: 'Director de Fotografía',
-    role: 'Carlos López',
-    image: '../../public/img/fotografia.jpg',
+    name: 'Giuliana Lopera',
+    role: 'Productora, Script - Pietaje y Editora',
+    image: '../../public/img/produccion/GIULIANA.jpg'
   },
   {
-    name: 'Diseñador de Producción',
-    role: 'Ana Martínez',
-    image: '../../public/img/disenador.jpg',
+    name: 'Esteban Castiblanco',
+    role: 'Guionista y Sonidista',
+    image: '../../public/img/produccion/ESTEBAN.jpg'
+  },
+  {
+    name: 'Santiago Pardo',
+    role: 'Guionista, Camatógrafo y Editor',
+    image: '../../public/img/produccion/SANTIAGO_PARDO.jpg'
+  },
+  {
+    name: 'Juan Pablo Gutiérrez',
+    role: 'Director, Editor y Dirección de arte',
+    image: '../../public/img/produccion/PABLO_GUTIERREZ.jpg'
+  },
+  {
+    name: 'Juan Diego Garzón',
+    role: 'Entrevistador y Editor',
+    image: '../../public/img/produccion/'
+  },
+  {
+    name: 'Daniel Medina',
+    role: 'Camarógrafo y Editor',
+    image: '../../public/img/produccion/DANIEL.jpg'
+  },
+  {
+    name: 'Zharick Noriega',
+    role: 'Sonidista y Editora',
+    image: '../../public/img/produccion/ZHARICK.jpg'
   },
 ];
 
 const ProductionTeam = () => {
   return (
-    <section className="h-screen bg-[#6e322b] py-10">
+    <section className="h-auto bg-[#6e322b] py-10">
       <div className="container mx-auto px-4">
         <SectionHeader
-          id="produccion"
-          title={<h1 className="text-white">Equipo de Producción</h1>}
-          subtitle={<p className="text-white">Conoce al equipo detrás de cámaras</p>}
+          id="producción"
+          title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#ffff' }}>Equipo de Producción</h2>}
         />
 
         <Swiper
@@ -53,7 +77,7 @@ const ProductionTeam = () => {
             slideShadows: false,
           }}
           autoplay={{
-            delay: 3000,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           loop={true}
@@ -61,17 +85,21 @@ const ProductionTeam = () => {
         >
           {team.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="relative bg-coffee-800 rounded-lg overflow-hidden shadow-xl w-66 mx-auto">
-                <div className="h-72 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="p-5 text-cream-50 text-center">
-                  <h3 className="text-xl font-serif font-bold">{member.name}</h3>
-                  <p className="text-cream-100 mt-2 font-bold italic">{member.role}</p>
+              <div
+                className="relative group w-80 h-100 mx-auto overflow-hidden rounded-lg shadow-lg"
+                onMouseEnter={(e) => e.currentTarget.closest('.swiper').swiper.autoplay.stop()}
+                onMouseLeave={(e) => e.currentTarget.closest('.swiper').swiper.autoplay.start()}
+              >
+                {/* Foto */}
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                {/* Fondo borroso y texto al hacer hover */}
+                <div className="absolute inset-0 bg-black/70 backdrop-blur-md flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-center mt-4 text-xl font-typewriter font-bold text-white">{member.name}</h3>
+                  <p className="text-center text-white mt-4 font-bold italic">{member.role}</p>
                 </div>
               </div>
             </SwiperSlide>

@@ -26,12 +26,11 @@ const arcs = [
 
 const DramaticArcs = () => {
   return (
-    <section className="py-24 bg-coffee-50">
+    <section className="h-auto py-24 bg-[#6e322b]">
       <div className="container mx-auto px-4">
         <SectionHeader
           id="arcos"
-          title="Arcos"
-          subtitle="La evolución de nuestra historia a través de cuatro capítulos"
+          title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#fff' }}>Arcos</h2>}
         />
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -47,6 +46,7 @@ const DramaticArcs = () => {
                     src={arc.image}
                     alt={arc.title}
                     className="w-full h-full object-cover rounded-lg"
+                    style={{ height: '100%', width: '100%' }}
                   />
                   <h3 className="text-xl font-serif font-bold text-center mt-4 text-coffee-900">
                     {arc.title}
