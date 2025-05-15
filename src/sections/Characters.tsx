@@ -11,7 +11,7 @@ const characters = [
   {
     name: 'David Alberto Giraldo (Niño)',
     role: 'Interpretado por: Santiago Montoya Bermúdez',
-    image: '../../public/img/personajes/David_giraldo.jpg',
+    image: '../../public/img/personajes/David_giraldo.webp',
     clasificacion: 'Actor',
     description:
       'Tiene 11 años, es nacido en Filandia, Quindío y cursa quinto grado. Está expuesto a un ambiente de trabajo arduo, pero a su vez, crece bajo la influencia del consumo de drogas. A pesar de vivir bajo las dificultades de un niño campesino mantiene su pasión por jugar fútbol, gracias a su inocencia trata de ser feliz sobrellevando los problemas que tiene en su casa.',
@@ -19,7 +19,7 @@ const characters = [
   {
     name: 'David Alberto Giraldo (Adulto)',
     role: 'Interpretado por: Santiago Montoya Bermúdez',
-    image: '../../public/img/personajes/reinel.jpg',
+    image: '../../public/img/personajes/reinel.webp',
     clasificacion: 'Actor',
     description:
       'Ha vivido en Filandia, Quindío toda su vida, actualmente tiene 52 años y trabaja como jornalero en una finca cafetera. La curiosidad en los cafetales lo volvió consumidor de sustancias alucinógenas. Su falta de decisión y abstinencia para dejar el consumo de drogas es una situación que termina por desestabilizar su relación con su esposa e hijos.',
@@ -27,7 +27,7 @@ const characters = [
   {
     name: 'Papá de David',
     role: 'Interpretado por: Fernando Lopera',
-    image: '../../public/img/personajes/Papa_david.jpg',
+    image: '../../public/img/personajes/Papa_david.webp',
     clasificacion: 'Actor',
     description:
       'Es un jornalero que recolecta café desde niño, con este trabajo consigue el sustento económico para su casa, pero el consumo de drogas en su ambiente laboral termina afectando la relación con su familia.',
@@ -35,7 +35,7 @@ const characters = [
   {
     name: 'Mamá de David',
     role: 'Interpretado por: Gloria Bernal',
-    image: '../../public/img/personajes/Mama_david.jpg',
+    image: '../../public/img/personajes/Mama_david.webp',
     clasificacion: 'Actor',
     description:
       'Es una ama de casa de 54 años y la dedicación a su hogar es la demostración de amor más clara que tiene hacia su hijo David Alberto y a su esposo.',
@@ -44,7 +44,7 @@ const characters = [
   {
     name: 'Juan Carlos Patiño Zambrano',
     role: 'director del Hospital Mental de Filandia',
-    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    image: '../../public/img/personajes/entrevistados/prueba.webp',
     clasificacion: 'Entrevista',
     description:
       'Es el director del Hospital Mental de Filandia. Años atrás se desempeñó como concejal de Armenia, lo que le da más respaldo, autoridad y veracidad a la información que brinde.',
@@ -52,7 +52,7 @@ const characters = [
   {
     name: 'Carlos Arturo López',
     role: 'Vocero de la Unión de Cafeteros de Colombia',
-    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    image: '../../public/img/personajes/entrevistados/prueba.webp',
     clasificacion: 'Entrevista',
     description:
       'Es el vocero de la Unión de Cafeteros de Colombia, grupo sindical que vela por los derechos de los/as trabajadores/as en los cafetales del Quindío. Ha liderado luchas en contra de las grandes empresas, como Juan Valdez, y es una figura representativa para los jornaleros de la región.',
@@ -60,7 +60,7 @@ const characters = [
   {
     name: 'Bernardo Pachón',
     role: 'Administrador de fincas',
-    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    image: '../../public/img/personajes/entrevistados/prueba.webp',
     clasificacion: 'Entrevista',
     description:
       'Es un administrador de fincas cafeteras ubicadas en Barcelona, Quindío. Él ha dedicado toda su vida a la producción y cosecha de café como su profesión, influenciado por toda su familia que también ha sido cafetera.',
@@ -68,7 +68,7 @@ const characters = [
   {
     name: 'Psiquiatra',
     role: 'pendiente',
-    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    image: '../../public/img/personajes/entrevistados/prueba.webp',
     clasificacion: 'Entrevista',
     description:
       'pendiente',
@@ -76,7 +76,7 @@ const characters = [
   {
     name: 'Secretario de salud',
     role: 'pendiente',
-    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    image: '../../public/img/personajes/entrevistados/prueba.webp',
     clasificacion: 'Entrevista',
     description:
       'pendiente',
@@ -84,7 +84,7 @@ const characters = [
   {
     name: 'Jornaleros',
     role: 'pendiente',
-    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    image: '../../public/img/personajes/entrevistados/prueba.webp',
     clasificacion: 'Entrevista',
     description:
       'pendiente',
@@ -92,7 +92,7 @@ const characters = [
   {
     name: 'Jornaleros',
     role: 'pendiente',
-    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    image: '../../public/img/personajes/entrevistados/prueba.webp',
     clasificacion: 'Entrevista',
     description:
       'pendiente',

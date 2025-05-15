@@ -28,7 +28,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{
-          backgroundImage: "url('../img/bg_primera_vista.jpg')",
+          backgroundImage: "url('../img/bg_primera_vista.webp')",
           filter: 'blur(3px)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',

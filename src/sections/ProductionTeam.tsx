@@ -10,47 +10,47 @@ const team = [
   {
     name: 'Juan Pablo Delgado',
     role: 'Director y Editor',
-    image: '../../public/img/produccion/JUANPABLO.jpg'
+    image: '../../public/img/produccion/JUANPABLO.webp'
   },
   {
     name: 'Santiago Mejía',
     role: 'Guionista, Director fotográfico y Editor',
-    image: '../../public/img/produccion/SANTIAGO_MEJIA.jpg'
+    image: '../../public/img/produccion/SANTIAGO_MEJIA.webp'
   },
   {
     name: 'Giuliana Lopera',
     role: 'Productora, Script - Pietaje y Editora',
-    image: '../../public/img/produccion/GIULIANA.jpg'
+    image: '../../public/img/produccion/GIULIANA.webp'
   },
   {
     name: 'Esteban Castiblanco',
     role: 'Guionista y Sonidista',
-    image: '../../public/img/produccion/ESTEBAN.jpg'
+    image: '../../public/img/produccion/ESTEBAN.webp'
   },
   {
     name: 'Santiago Pardo',
     role: 'Guionista, Camatógrafo y Editor',
-    image: '../../public/img/produccion/SANTIAGO_PARDO.jpg'
+    image: '../../public/img/produccion/SANTIAGO_PARDO.webp'
   },
   {
     name: 'Juan Pablo Gutiérrez',
     role: 'Director, Editor y Dirección de arte',
-    image: '../../public/img/produccion/PABLO_GUTIERREZ.jpg'
+    image: '../../public/img/produccion/PABLO_GUTIERREZ.webp'
   },
   {
     name: 'Juan Diego Garzón',
     role: 'Entrevistador y Editor',
-    image: '../../public/img/produccion/'
+    image: '../../public/img/produccion/JUANDIEGO.webp'
   },
   {
     name: 'Daniel Medina',
     role: 'Camarógrafo y Editor',
-    image: '../../public/img/produccion/DANIEL.jpg'
+    image: '../../public/img/produccion/DANIEL.webp'
   },
   {
     name: 'Zharick Noriega',
     role: 'Sonidista y Editora',
-    image: '../../public/img/produccion/ZHARICK.jpg'
+    image: '../../public/img/produccion/ZHARICK.webp'
   },
 ];
 

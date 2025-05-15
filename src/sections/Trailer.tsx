@@ -20,7 +20,7 @@ const Trailer = () => {
           {/* Póster */}
           <div className="flex justify-center items-center">
             <img
-              src="../../public/img/poster.jpg"
+              src="../../public/img/poster.webp"
               alt="Póster del tráiler"
               className="w-full max-w-sm rounded-lg shadow-lg"
             />
