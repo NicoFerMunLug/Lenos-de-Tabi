@@ -89,6 +89,14 @@ const characters = [
     description:
       'pendiente',
   },
+  {
+    name: 'Jornaleros',
+    role: 'pendiente',
+    image: '../../public/img/personajes/entrevistados/prueba.jpg',
+    clasificacion: 'Entrevista',
+    description:
+      'pendiente',
+  },
 ];
 
 const Characters = () => {
