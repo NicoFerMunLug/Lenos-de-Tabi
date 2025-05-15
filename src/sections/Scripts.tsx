@@ -13,7 +13,7 @@ const scripts = [
     icon: '🎥', // Puedes reemplazar esto con un ícono o imagen
   },
   {
-    title: 'Plan de Rodaje y Pietaje',
+    title: 'Plan de Rodaje',
     link: 'https://uexternadoedu-my.sharepoint.com/:w:/g/personal/annie_botia_uexternado_edu_co/EZji0R446Q9Jiw512rcHG0wB1xn0kWo0PtyVNE2zHCp4rQ?e=cvhKFZ',
     icon: '🎬', // Puedes reemplazar esto con un ícono o imagen
   },

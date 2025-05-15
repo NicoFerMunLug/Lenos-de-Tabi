@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="text-center"> {/* Centrado */}
           <h4 className="text-lg font-serif font-bold text-cream-50 mb-6 font-typewriter font-bold">Créditos</h4>
           <ul className="space-y-3 font-typewriter">
-            {['Juan Pérez', 'María Gómez', 'Carlos López', 'Ana Martínez', 'Luis Torres'].map((name) => (
+            {['Juan Pablo Delgado', 'Santiago Mejía', 'Giuliana Lopera', 'Esteban Castiblanco', 'Santiago Pardo', 'Juan Pablo Gutiérrez', 'Juan Diego Garzón', 'Daniel Medina', 'Zharick Noriega'].map((name) => (
               <li key={name} className="text-cream-100">
                 {name}
               </li>
