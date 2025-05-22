@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import '../index.css';
 
@@ -23,44 +23,10 @@ const customGridPositions: { [key: number]: string } = {
 };
 
 const Gallery: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [loadedImages, setLoadedImages] = useState(0);
-
-  const handleImageLoad = () => {
-    setLoadedImages((prev) => prev + 1);
-  };
-
-  useEffect(() => {
-    if (loadedImages === images.length) {
-      // Agrega un pequeño retraso para una mejor experiencia visual
-      setTimeout(() => setIsLoading(false), 500);
-    }
-  }, [loadedImages]);
-
   return (
     <section className="py-24 bg-cream-100 relative min-h-screen">
-      {/* Loader */}
-      <div className={`loader ${isLoading ? '' : 'fade-out'}`}>
-        <div className="container">
-          <div className="coffee-header">
-            <div className="coffee-header__buttons"></div>
-            <div className="coffee-header__display"></div>
-            <div className="coffee-header__details"></div>
-          </div>
-          <div className="coffee-medium">
-            <div className="coffe-medium__exit"></div>
-            <div className="coffee-medium__arm"></div>
-            <div className="coffee-medium__liquid"></div>
-            <div className="smoke one"></div>
-            <div className="smoke two"></div>
-            <div className="smoke three"></div>
-            <div className="smoke four"></div>
-            <div className="coffee-medium__cup"></div>
-          </div>
-        </div>
-      </div>
       {/* Galería */}
-      <div className={`${isLoading ? 'hidden' : 'block'} container mx-auto px-4`}>
+      <div className="container mx-auto px-4">
         <SectionHeader
           id="galeria"
           title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#6e322b' }}>Galería</h2>}
@@ -77,7 +43,6 @@ const Gallery: React.FC = () => {
                   alt={image.alt}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  onLoad={handleImageLoad}
                 />
                 <div className="absolute inset-0 bg-coffee-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
