@@ -30,7 +30,7 @@ const Trailer = () => {
           {/* Video */}
           <div className="flex justify-center items-center">
             <lite-youtube
-              videoid="jwmlUCtu3lM"
+              videoid="S6lA6jabODc"
               class="w-full h-100"
             ></lite-youtube>
           </div>
