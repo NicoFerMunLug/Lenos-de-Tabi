@@ -37,7 +37,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex flex-wrap space-x-4">
-            <ul className="flex flex-wrap space-x-4 font-typewriter">
+            <ul className="flex flex-wrap md:gap-x-2 md:gap-y-2 md:text-xs lg:gap-x-4 lg:text-sm font-typewriter">
               {[
                 'Inicio',
                 'Ficha técnica',

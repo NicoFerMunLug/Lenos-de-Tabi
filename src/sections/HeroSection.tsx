@@ -44,7 +44,7 @@ const HeroSection = () => {
         <img
           src="../../public/img/TITULO.png"
           alt="El auténtico sabor de Colombia"
-          style={{ width: '80rem', height: 'auto', paddingBottom: '30px',marginBottom: '-150px', marginTop: '-200px'}}
+          className="w-300 sm:w-96 md:w-[60rem] lg:w-[55rem] h-auto mx-auto mb-[-15px] sm:mb-[-80px] sm:mt-[-80px]"
         />
         {/* Texto adicional */}
         <p className="text-2xl md:text-3xl max-w-2xl mx-auto mt--40 mb-8 text-white font-semibold">

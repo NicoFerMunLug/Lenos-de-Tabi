@@ -20,9 +20,10 @@ const Trailer = () => {
           {/* Póster */}
           <div className="flex justify-center items-center">
             <img
-              src="../../public/img/poster.webp"
+              src="../../public/img/Poster.webp"
               alt="Póster del tráiler"
-              className="w-full max-w-sm rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg"
+              style={{ width: '20rem', height: 'auto'}}
             />
           </div>
 

@@ -7,7 +7,7 @@ type Image = {
   alt: string;
 };
 
-const images: Image[] = Array.from({ length: 32 }, (_, i) => ({
+const images: Image[] = Array.from({ length: 31 }, (_, i) => ({
   url: `/img/galeria/foto${i + 1}.webp`,
   alt: `Foto ${i + 1}`
 }));
@@ -59,7 +59,6 @@ const Gallery: React.FC = () => {
           </div>
         </div>
       </div>
-
       {/* Galería */}
       <div className={`${isLoading ? 'hidden' : 'block'} container mx-auto px-4`}>
         <SectionHeader

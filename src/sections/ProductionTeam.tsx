@@ -86,7 +86,13 @@ const ProductionTeam = () => {
           {team.map((member, index) => (
             <SwiperSlide key={index}>
               <div
-                className="relative group w-80 h-100 mx-auto overflow-hidden rounded-lg shadow-lg"
+                className="
+                  relative group
+                  w-56 h-72
+                  sm:w-72 sm:h-96
+                  md:w-80 md:h-[28rem]
+                  mx-auto overflow-hidden rounded-lg shadow-lg
+                "
                 onMouseEnter={(e) => e.currentTarget.closest('.swiper').swiper.autoplay.stop()}
                 onMouseLeave={(e) => e.currentTarget.closest('.swiper').swiper.autoplay.start()}
               >

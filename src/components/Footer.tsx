@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-[#6e322b] text-cream-100 py-16">
-      <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-16"> {/* Tres columnas iguales */}
+      <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-16"> {/* Tres columnas iguales */}
         
         {/* Columna 1: Información */}
         <div className="flex flex-col items-center md:items-start">
@@ -48,22 +48,10 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
-        {/* Columna 3: Créditos */}
-        <div className="text-center"> {/* Centrado */}
-          <h4 className="text-lg font-serif font-bold text-cream-50 mb-6 font-typewriter font-bold">Créditos</h4>
-          <ul className="space-y-3 font-typewriter">
-            {['Juan Pablo Delgado', 'Santiago Mejía', 'Giuliana Lopera', 'Esteban Castiblanco', 'Santiago Pardo', 'Juan Pablo Gutiérrez', 'Juan Diego Garzón', 'Daniel Medina', 'Zharick Noriega'].map((name) => (
-              <li key={name} className="text-cream-100">
-                {name}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
 
       {/* Pie de página */}
-      <div className="border-t border-coffee-800 pt-8 mt-16 text-center text-sm">
+      <div className="border-t border-coffee-800 pt-8 mt-16 text-center text-xs md:text-sm">
         <p>© {new Date().getFullYear()} Leños de Tabí. Todos los derechos reservados.</p>
       </div>
     </footer>

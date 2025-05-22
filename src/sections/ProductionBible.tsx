@@ -13,12 +13,12 @@ const ProductionBible = () => {
         <div className="mt-12">
           <div className="w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
             <iframe
-              allowFullScreen
-              scrolling="no"
-              className="fp-iframe border border-gray-300 w-full"
-              style={{ height: '400px' }}
-              src="https://heyzine.com/flip-book/6c8bd82d2b.html"
-              title="Biblia de Producción"
+            allowFullScreen
+            scrolling="no"
+            className="fp-iframe border border-gray-300 w-full"
+            style={{ height: '400px' }}
+            src="https://heyzine.com/flip-book/d16243c68b.html"
+            title="Biblia de Producción"
             ></iframe>
           </div>
         </div>

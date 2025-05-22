@@ -131,7 +131,13 @@ const Characters = () => {
           {characters.map((character, index) => (
             <SwiperSlide key={index}>
               <div
-                className="relative group w-80 h-100 mx-auto overflow-hidden rounded-lg shadow-lg"
+                className="
+                  relative group
+                  w-56 h-72
+                  sm:w-72 sm:h-96
+                  md:w-80 md:h-[28rem]
+                  mx-auto overflow-hidden rounded-lg shadow-lg
+                "
                 onMouseEnter={(e) => e.currentTarget.closest('.swiper').swiper.autoplay.stop()}
                 onMouseLeave={(e) => e.currentTarget.closest('.swiper').swiper.autoplay.start()}
               >
@@ -143,13 +149,12 @@ const Characters = () => {
                 />
                 {/* Fondo borroso y texto al hacer hover */}
                 <div className="absolute inset-0 bg-black/70 backdrop-blur-md flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-center mt-4 text-white font-bold italic">{character.description}</p>
+                  <p className="text-center mt-4 text-white font-bold italic text-xs sm:text-sm">{character.description}</p>
                 </div>
-
                 <div className="text-center mt-4">
-                  <p className="text-white font-bold italic">{character.clasificacion}</p>
-                  <p className="text-white font-bold italic">{character.name}</p>
-                  <p className="text-white font-bold italic">{character.role}</p>
+                  <p className="text-white font-bold italic text-xs sm:text-sm">{character.clasificacion}</p>
+                  <p className="text-white font-bold italic text-xs sm:text-sm">{character.name}</p>
+                  <p className="text-white font-bold italic text-xs sm:text-sm">{character.role}</p>
                 </div>
               </div>
             </SwiperSlide>
