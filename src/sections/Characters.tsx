@@ -44,7 +44,7 @@ const characters = [
   {
     name: 'Juan Carlos Patiño Zambrano',
     role: 'director del Hospital Mental de Filandia',
-    image: '../../public/img/personajes/entrevistados/Juan_Carlos_Patiño.png',
+    image: '../../public/img/personajes/entrevistados/Juan_Carlos_Patiño.webp',
     clasificacion: 'Entrevistado',
     description:
       'Es el director del Hospital Mental de Filandia. Años atrás se desempeñó como concejal de Armenia, lo que le da más respaldo, autoridad y veracidad a la información que brinde.',
@@ -52,7 +52,7 @@ const characters = [
   {
     name: 'Carlos Arturo López',
     role: 'Vocero de la Unión de Cafeteros de Colombia',
-    image: '../../public/img/personajes/entrevistados/Carlos_Arturo_Lopez.png',
+    image: '../../public/img/personajes/entrevistados/Carlos_Arturo_Lopez.webp',
     clasificacion: 'Entrevistado',
     description:
       'Es el vocero de la Unión de Cafeteros de Colombia, grupo sindical que vela por los derechos de los/as trabajadores/as en los cafetales del Quindío. Ha liderado luchas en contra de las grandes empresas, como Juan Valdez, y es una figura representativa para los jornaleros de la región.',
@@ -60,7 +60,7 @@ const characters = [
   {
     name: 'Bernardo Pachón',
     role: 'Administrador de fincas',
-    image: '../../public/img/personajes/entrevistados/Bernardo_Pachon.png',
+    image: '../../public/img/personajes/entrevistados/Bernardo_Pachon.webp',
     clasificacion: 'Entrevistado',
     description:
       'Es un administrador de fincas cafeteras ubicadas en Barcelona, Quindío. Él ha dedicado toda su vida a la producción y cosecha de café como su profesión, influenciado por toda su familia que también ha sido cafetera.',
@@ -68,7 +68,7 @@ const characters = [
   {
     name: 'Oscar Cabrera Erazo',
     role: 'Psiquiatra',
-    image: '../../public/img/personajes/entrevistados/Oscar_Cabrera_Erazo.png',
+    image: '../../public/img/personajes/entrevistados/Oscar_Cabrera_Erazo.webp',
     clasificacion: 'Entrevistado',
     description:
       'Oscar Cabrera Erazo es el psiquiatra del hospital mental de filandia desde hace varios años. Su labor se ha caracterizado por un compromiso con la comunidad y con sus pacientes; especialmente en el tratamiento mancomunado con los nexos familiares que, para el, son clave para que las personas puedan superar sus adicciones.',
@@ -76,7 +76,7 @@ const characters = [
   {
     name: 'Carlos Alberto Gómez',
     role: 'Secretario de salud',
-    image: '../../public/img/personajes/entrevistados/Carlos_Alberto_Gomez.png',
+    image: '../../public/img/personajes/entrevistados/Carlos_Alberto_Gomez.webp',
     clasificacion: 'Entrevistado',
     description:
       'Carlos Alberto Gómez es el actual secretario de salud del Quindío. Junto con su equipo han buscado la forma de erradicar El problema de drogadicción en los campos y zonas cafeteras. Se encarga de brindar una visión institucional del tema central de la serie.',
@@ -84,7 +84,7 @@ const characters = [
   {
     name: 'William Ríos Gómez',
     role: 'Jornaleros',
-    image: '../../public/img/personajes/entrevistados/William_Rios_Gomez.png',
+    image: '../../public/img/personajes/entrevistados/William_Rios_Gomez.webp',
     clasificacion: 'Entrevistado',
     description:
       'William Ríos Gómez es un jornalero del departamento del Quindío, nacido y criado en Filandia. Ha pasado toda su vida trabajando entre cafetales, una labor que aprendió desde niño gracias a su familia, que siempre se ha dedicado al campo. Conoce como la palma de su mano el trabajo de campo, especialmente el cultivo y la recolección del café, y ha sido testigo de cómo han cambiado las condiciones para los trabajadores rurales a lo largo de los años. Su experiencia le permite hablar con claridad sobre lo que realmente sucede en las fincas.',
@@ -92,7 +92,7 @@ const characters = [
   {
     name: 'Consumidor anónimo',
     role: 'Jornalero',
-    image: '../../public/img/personajes/entrevistados/Caficultor_Consumidor.png',
+    image: '../../public/img/personajes/entrevistados/Caficultor_Consumidor.webp',
     clasificacion: 'Entrevistado',
     description:
       'Este personaje es un hombre de mediana edad cuya vida ha estado marcada por el trabajo duro y decisiones complejas. Ha sido jornalero desde joven, oficios que han dejado huella en su cuerpo que hablan de años entre cafetales. Su paso por el consumo de sustancias, iniciado desde temprano, se refleja más en la forma en que se mueve y en lo que comparte sobre su historia. Vive las consecuencias de sus elecciones, que reconoce sus errores y que ahora, dentro de una fundación de rehabilitación, está en proceso de mejora personal.',
