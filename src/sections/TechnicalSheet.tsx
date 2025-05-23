@@ -17,7 +17,7 @@ const TechnicalSheet = () => {
           
           <div className="mt-8 space-y-6 text-lg p-8 rounded-lg">
             <p className="text-justify">
-              “Detrás del cafetal” es una serie documental que busca retratar la realidad sobre la drogadicción que viven a diario los caficultores del Quindío. Lo que inicia con un viaje mostrando todo el proceso de recolección de café y de las manos que están detrás de ello pronto se convertirá en un retrato de la dura realidad que viven los recolectores y su lucha contra las diferentes drogas como el bazuco.
+              “Leños de Tabi” es una serie documental que busca retratar la realidad sobre la drogadicción que viven a diario los caficultores del Quindío. Lo que inicia con un viaje mostrando todo el proceso de recolección de café y de las manos que están detrás de ello pronto se convertirá en un retrato de la dura realidad que viven los recolectores y su lucha contra las diferentes drogas como el bazuco.
             </p>
             <p className="text-justify">
               La serie también busca indagar y exponer las razones detrás del consumo, el acceso a las drogas y el abandono por parte de las instituciones gubernamentales a una población vulnerable por las vivencias a las que se exponen día a día los caficultores.
