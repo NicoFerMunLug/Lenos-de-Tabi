@@ -139,7 +139,8 @@ const characters = [
                   <img
                     src={character.image}
                     alt={character.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    style={{ height: '30rem', width: '100%' }}
                   />
                   {/* Fondo borroso y texto al hacer hover */}
                   <div className="absolute inset-0 bg-black/70 backdrop-blur-md flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
