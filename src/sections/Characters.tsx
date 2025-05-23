@@ -95,7 +95,7 @@ const characters = [
     image: '../../public/img/personajes/entrevistados/Caficultor_Consumidor.png',
     clasificacion: 'Entrevistado',
     description:
-      'Este personaje es un hombre de mediana edad cuya vida ha estado marcada por el trabajo duro y decisiones complejas. Ha sido caficultor y jornalero desde joven, oficios que han dejado huella en su cuerpo: manos endurecidas, llenas de tierra, con cicatrices y callos que hablan de años entre cafetales; piernas flacas pero firmes, acostumbradas a largas jornadas bajo el sol. Su paso por el consumo de sustancias, iniciado desde temprano, se refleja más en la forma en que se mueve y en lo que comparte sobre su historia que en lamentos. No se presenta como una víctima, sino como alguien que ha vivido las consecuencias de sus elecciones, que reconoce sus errores y que ahora, dentro de una fundación de rehabilitación, está en proceso de entender y reconfigurar su camino.',
+      'Este personaje es un hombre de mediana edad cuya vida ha estado marcada por el trabajo duro y decisiones complejas. Ha sido jornalero desde joven, oficios que han dejado huella en su cuerpo que hablan de años entre cafetales. Su paso por el consumo de sustancias, iniciado desde temprano, se refleja más en la forma en que se mueve y en lo que comparte sobre su historia. Vive las consecuencias de sus elecciones, que reconoce sus errores y que ahora, dentro de una fundación de rehabilitación, está en proceso de mejora personal.',
   },
 ];
 
