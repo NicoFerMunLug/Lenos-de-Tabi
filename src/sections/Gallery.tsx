@@ -34,8 +34,8 @@ const Gallery: React.FC = () => {
 
   const getGridClass = (index: number) =>
     `relative group overflow-hidden rounded-lg ${
-      !isMobile && customGridPositions[index] ? `sm:${customGridPositions[index]}` : ''
-    }`;
+      isMobile ? 'max-h-[180px]' : ''
+    } ${!isMobile && customGridPositions[index] ? `sm:${customGridPositions[index]}` : ''}`;
 
   return (
     <section className="py-24 bg-cream-100 relative min-h-screen">
@@ -52,14 +52,14 @@ const Gallery: React.FC = () => {
           }
         />
         <div className="mt-12">
-          <div className={`grid gap-2 ${isMobile ? 'grid-cols-5 grid-rows-3' : 'grid-cols-8 grid-rows-4 gap-4'}`}>
+          <div className={`grid gap-2 ${isMobile ? 'grid-cols-2 sm:grid-cols-3' : 'grid-cols-8 grid-rows-4 gap-4'}`}>
             {images.map((image, index) => (
               <div key={index} className={getGridClass(index)}>
                 <img
                   src={image.url}
                   alt={image.alt}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover aspect-square transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-coffee-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
