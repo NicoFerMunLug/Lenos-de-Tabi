@@ -71,7 +71,7 @@ const characters = [
     image: '../../public/img/personajes/entrevistados/Oscar_Cabrera_Erazo.png',
     clasificacion: 'Entrevistado',
     description:
-      'pendiente',
+      'Oscar Cabrera Erazo es el psiquiatra del hospital mental de filandia desde hace varios años. Su labor se ha caracterizado por un compromiso con la comunidad y con sus pacientes; especialmente en el tratamiento mancomunado con los nexos familiares que, para el, son clave para que las personas puedan superar sus adicciones.',
   },
   {
     name: 'Carlos Alberto Gómez',
@@ -79,7 +79,7 @@ const characters = [
     image: '../../public/img/personajes/entrevistados/Carlos_Alberto_Gomez.png',
     clasificacion: 'Entrevistado',
     description:
-      'pendiente',
+      'Carlos Alberto Gómez es el actual secretario de salud del Quindío. Junto con su equipo han buscado la forma de erradicar El problema de drogadicción en los campos y zonas cafeteras. Se encarga de brindar una visión institucional del tema central de la serie.',
   },
   {
     name: 'William Ríos Gómez',
@@ -95,7 +95,7 @@ const characters = [
     image: '../../public/img/personajes/entrevistados/Caficultor_Consumidor.png',
     clasificacion: 'Entrevistado',
     description:
-      'pendiente',
+      'Este personaje es un hombre de mediana edad cuya vida ha estado marcada por el trabajo duro y decisiones complejas. Ha sido caficultor y jornalero desde joven, oficios que han dejado huella en su cuerpo: manos endurecidas, llenas de tierra, con cicatrices y callos que hablan de años entre cafetales; piernas flacas pero firmes, acostumbradas a largas jornadas bajo el sol. Su paso por el consumo de sustancias, iniciado desde temprano, se refleja más en la forma en que se mueve y en lo que comparte sobre su historia que en lamentos. No se presenta como una víctima, sino como alguien que ha vivido las consecuencias de sus elecciones, que reconoce sus errores y que ahora, dentro de una fundación de rehabilitación, está en proceso de entender y reconfigurar su camino.',
   },
 ];
 

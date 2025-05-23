@@ -5,19 +5,19 @@ import '../index.css';
 // Lista de capítulos con IDs de videos de YouTube
 const chapters = [
   {
-    title: 'Capítulo 1',
+    title: 'DETRÁS DEL CAFETAL - CAPITULO 1',
     videoId: '662IlyhC4xU'
   },
   {
-    title: 'Capítulo 2',
+    title: 'A LA SOMBRA DEL ÁRBOL - CAPITULO 2',
     videoId: 'irkvGXDS2_M'
   },
   {
-    title: 'Capítulo 3',
+    title: 'MALEZA - CAPITULO 3',
     videoId: 'KJJ1vs6Drwk'
   },
   {
-    title: 'Capítulo 4',
+    title: 'UNA NUEVA COSECHA - CAPITULO 4',
     videoId: 'QipBnLxFqlg'
   }
 ];
