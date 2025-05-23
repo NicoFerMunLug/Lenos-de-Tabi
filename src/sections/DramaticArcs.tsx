@@ -26,24 +26,29 @@ const DramaticArcs = () => {
       <div className="container mx-auto px-4">
         <SectionHeader
           id="arcos"
-          title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#fff' }}>Arcos</h2>}
+          title={
+            <h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#fff' }}>
+              Arcos
+            </h2>
+          }
         />
-        
+
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 arcos-grid relative">
           {arcs.map((arc, index) => (
             <div
               key={index}
-              className={`arco-card relative transition-transform duration-300 rounded-lg overflow-hidden shadow-lg hover:z-10 hover:scale-110 ${index === 0
+              className={`arco-card relative transition-transform duration-300 rounded-lg overflow-hidden shadow-lg sm:hover:scale-150 hover:z-10
+                ${index === 0
                   ? 'origin-left'
                   : index === arcs.length - 1
                   ? 'origin-right'
                   : 'origin-center'
-                }`}
+                } h-[30rem]`} // altura fija aquí
             >
               <img
                 src={arc.image}
                 alt={arc.title}
-                className="w-full object-cover rounded-lg h-auto sm:h-[25rem] lg:h-[30rem]"
+                className="w-full h-full object-cover" // imagen se adapta completamente
               />
             </div>
           ))}
