@@ -12,11 +12,6 @@ const scripts = [
     link: 'https://uexternadoedu-my.sharepoint.com/:x:/g/personal/annie_botia_uexternado_edu_co/EWdWcehjbzlNvJfS1-G1yJABd2M5i31npRKjX-5mQJeTTA?e=vmM5ab',
     icon: '🎥', // Puedes reemplazar esto con un ícono o imagen
   },
-  {
-    title: 'Plan de Rodaje',
-    link: 'https://uexternadoedu-my.sharepoint.com/:w:/g/personal/annie_botia_uexternado_edu_co/EZji0R446Q9Jiw512rcHG0wB1xn0kWo0PtyVNE2zHCp4rQ?e=cvhKFZ',
-    icon: '🎬', // Puedes reemplazar esto con un ícono o imagen
-  },
 ];
 
 const Scripts = () => {
@@ -30,7 +25,7 @@ const Scripts = () => {
           Guiones
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {scripts.map((script, index) => (
             <a
               key={index}

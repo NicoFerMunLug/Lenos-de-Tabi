@@ -10,15 +10,15 @@ const chapters = [
   },
   {
     title: 'Capítulo 2',
-    videoId: 'CHhKIBrHk14'
+    videoId: 'irkvGXDS2_M'
   },
   {
     title: 'Capítulo 3',
-    videoId: '-HnkibpABYE'
+    videoId: 'KJJ1vs6Drwk'
   },
   {
     title: 'Capítulo 4',
-    videoId: '_cX2AkBD0z4'
+    videoId: 'QipBnLxFqlg'
   }
 ];
 

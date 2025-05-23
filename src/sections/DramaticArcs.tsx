@@ -4,23 +4,19 @@ import SectionHeader from '../components/SectionHeader';
 const arcs = [
   {
     title: 'Capítulo 1',
-    image: 'https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.'
+    image: 'img/arcos/arco1.webp',
   },
   {
     title: 'Capítulo 2',
-    image: 'https://images.pexels.com/photos/2608495/pexels-photo-2608495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.'
+    image: 'img/arcos/arco2.webp',
   },
   {
     title: 'Capítulo 3',
-    image: 'https://images.pexels.com/photos/2159065/pexels-photo-2159065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.'
+    image: 'img/arcos/arco3.webp',
   },
   {
     title: 'Capítulo 4',
-    image: 'https://images.pexels.com/photos/2159062/pexels-photo-2159062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.'
+    image: 'img/arcos/arco4.webp',
   }
 ];
 
@@ -33,33 +29,24 @@ const DramaticArcs = () => {
           title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#fff' }}>Arcos</h2>}
         />
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 arcos-grid relative">
           {arcs.map((arc, index) => (
             <div
               key={index}
-              className="flip-card"
+              className={`arco-card relative transition-transform duration-300 rounded-lg overflow-hidden shadow-lg hover:z-10 hover:scale-150 ${
+                index === 0
+                  ? 'origin-left'
+                  : index === arcs.length - 1
+                  ? 'origin-right'
+                  : 'origin-center'
+              }`}
             >
-              <div className="flip-card-inner">
-                {/* Frente de la tarjeta */}
-                <div className="flip-card-front">
-                  <img
-                    src={arc.image}
-                    alt={arc.title}
-                    className="w-full h-full object-cover rounded-lg"
-                    style={{ height: '100%', width: '100%' }}
-                  />
-                  <h3 className="text-xl font-serif font-bold text-center mt-4 text-coffee-900">
-                    {arc.title}
-                  </h3>
-                </div>
-
-                {/* Parte trasera de la tarjeta */}
-                <div className="flip-card-back">
-                  <p className="text-sm text-center px-4">
-                    {arc.description}
-                  </p>
-                </div>
-              </div>
+              <img
+                src={arc.image}
+                alt={arc.title}
+                className="w-full h-100 object-cover rounded-lg"
+                style={{ height: '25rem', width: '100%' }}
+              />
             </div>
           ))}
         </div>
