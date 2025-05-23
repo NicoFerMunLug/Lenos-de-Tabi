@@ -113,7 +113,15 @@ const characters = [
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={3}
+            slidesPerView={1} // default para móvil
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
             coverflowEffect={{
               rotate: 0,
               stretch: 0,

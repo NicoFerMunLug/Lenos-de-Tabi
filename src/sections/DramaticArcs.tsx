@@ -29,23 +29,21 @@ const DramaticArcs = () => {
           title={<h2 className="text-4xl font-typewriter font-bold text-center mb-8" style={{ color: '#fff' }}>Arcos</h2>}
         />
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 arcos-grid relative">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 arcos-grid relative">
           {arcs.map((arc, index) => (
             <div
               key={index}
-              className={`arco-card relative transition-transform duration-300 rounded-lg overflow-hidden shadow-lg hover:z-10 hover:scale-150 ${
-                index === 0
+              className={`arco-card relative transition-transform duration-300 rounded-lg overflow-hidden shadow-lg hover:z-10 hover:scale-110 ${index === 0
                   ? 'origin-left'
                   : index === arcs.length - 1
                   ? 'origin-right'
                   : 'origin-center'
-              }`}
+                }`}
             >
               <img
                 src={arc.image}
                 alt={arc.title}
-                className="w-full h-100 object-cover rounded-lg"
-                style={{ height: '25rem', width: '100%' }}
+                className="w-full object-cover rounded-lg h-auto sm:h-[25rem] lg:h-[30rem]"
               />
             </div>
           ))}
