@@ -87,7 +87,7 @@ const characters = [
     image: '../../public/img/personajes/entrevistados/William_Rios_Gomez.png',
     clasificacion: 'Entrevistado',
     description:
-      'pendiente',
+      'William Ríos Gómez es un jornalero del departamento del Quindío, nacido y criado en Filandia. Ha pasado toda su vida trabajando entre cafetales, una labor que aprendió desde niño gracias a su familia, que siempre se ha dedicado al campo. Conoce como la palma de su mano el trabajo de campo, especialmente el cultivo y la recolección del café, y ha sido testigo de cómo han cambiado las condiciones para los trabajadores rurales a lo largo de los años. Su experiencia le permite hablar con claridad sobre lo que realmente sucede en las fincas.',
   },
   {
     name: 'Consumidor anónimo',
