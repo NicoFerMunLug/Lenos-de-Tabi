@@ -37,18 +37,18 @@ const DramaticArcs = () => {
           {arcs.map((arc, index) => (
             <div
               key={index}
-              className={`arco-card relative transition-transform duration-300 rounded-lg overflow-hidden shadow-lg sm:hover:scale-150 hover:z-10
+              className={`arco-card relative transition-transform duration-300 rounded-lg overflow-hidden shadow-lg sm:hover:scale-125 hover:z-10
                 ${index === 0
                   ? 'origin-left'
                   : index === arcs.length - 1
                   ? 'origin-right'
                   : 'origin-center'
-                } h-[30rem]`} // altura fija aquí
+                } h-[30rem]`}
             >
               <img
                 src={arc.image}
                 alt={arc.title}
-                className="w-full h-full object-cover" // imagen se adapta completamente
+                className="w-full h-full"
               />
             </div>
           ))}
